@@ -1,1 +1,1 @@
-![AiBnB Clone ER Diagram](https://github.com/keglostephane/airbnb-clone-project/blob/a18daf9caa72a204f4b46e8402a83b902fd0ad4b/img/ER_Diagram.png "ER Diagram")
+![AiBnB Clone ER Diagram](https://github.com/keglostephane/alx-airbnb-database/blob/aa10d5c78b0de10d18ebb6ac4fde6ea0add2df7b/img/ER_Diagram.png "ER Diagram")
