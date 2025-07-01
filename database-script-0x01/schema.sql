@@ -28,7 +28,7 @@ CREATE TABLE properties (
     name VARCHAR NOT NULL,
     description TEXT NOT NULL,
     location VARCHAR NOT NULL,
-    pricepernight DECIMAL NOT NULL,
+    price_per_night DECIMAL NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );

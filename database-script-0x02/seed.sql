@@ -10,7 +10,7 @@ INSERT INTO users (user_id, first_name, last_name, email, password_hash, phone_n
 ('e4eebc99-9c0b-4ef8-bb6d-6bb9bd380a15', 'David', 'Jones', 'david.j@example.com', '$2a$10$vJv.3XzVZQ1bH5J5vLhLf5Yr5Jd5K5Yb5W3XzVZQ1bH5J5vLhLf', '+1 (503) 555-3486', 'guest');
 
 -- Seed Properties Table (5 records)
-INSERT INTO properties (property_id, host_id, name, description, location, pricepernight) VALUES
+INSERT INTO properties (property_id, host_id, name, description, location, price_per_night) VALUES
 ('f5eebc99-9c0b-4ef8-bb6d-6bb9bd380a16', 'b1eebc99-9c0b-4ef8-bb6d-6bb9bd380a12', 'Cozy Downtown Apartment', 'Modern 1-bedroom apartment in the heart of the city with great views.', 'New York, NY', 189.99),
 ('f6eebc99-9c0b-4ef8-bb6d-6bb9bd380a17', 'd3eebc99-9c0b-4ef8-bb6d-6bb9bd380a14', 'Beachfront Villa', 'Luxury villa with private beach access and infinity pool.', 'Miami, FL', 425.50),
 ('f7eebc99-9c0b-4ef8-bb6d-6bb9bd380a18', 'b1eebc99-9c0b-4ef8-bb6d-6bb9bd380a12', 'Mountain Cabin Retreat', 'Rustic cabin with modern amenities nestled in the mountains.', 'Aspen, CO', 275.00),
