@@ -3,11 +3,11 @@
 
 -- Seed Users Table (5 records)
 INSERT INTO users (user_id, first_name, last_name, email, password_hash, phone_number, role) VALUES
-('a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11', 'John', 'Smith', 'john.smith@example.com', '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u.', '+1 (415) 555-2671', 'guest'),
-('b1eebc99-9c0b-4ef8-bb6d-6bb9bd380a12', 'Emily', 'Johnson', 'emily.j@example.com', '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u.', '+1 (212) 555-4892', 'host'),
-('c2eebc99-9c0b-4ef8-bb6d-6bb9bd380a13', 'Michael', 'Williams', 'michael.w@example.com', '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u.', '+1 (310) 555-7364', 'guest'),
-('d3eebc99-9c0b-4ef8-bb6d-6bb9bd380a14', 'Sarah', 'Brown', 'sarah.b@example.com', '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u.', '+1 (305) 555-9215', 'host'),
-('e4eebc99-9c0b-4ef8-bb6d-6bb9bd380a15', 'David', 'Jones', 'david.j@example.com', '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u.', '+1 (503) 555-3486', 'guest');
+('a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11', 'John', 'Smith', 'john.smith@example.com', '$2a$10$E3ZTAOAdN7W8QN5U5YvJv.3XzVZQ1bH5J5vLhLf5Yr5Jd5K5Yb5W', '+1 (415) 555-2671', 'guest'),
+('b1eebc99-9c0b-4ef8-bb6d-6bb9bd380a12', 'Emily', 'Johnson', 'emily.j@example.com', '$2a$10$L5P5Y5N5U5Y5vJv.3XzVZQ1bH5J5vLhLf5Yr5Jd5K5Yb5W3XzVZQ', '+1 (212) 555-4892', 'host'),
+('c2eebc99-9c0b-4ef8-bb6d-6bb9bd380a13', 'Michael', 'Williams', 'michael.w@example.com', '$2a$10$N5U5Y5vJv.3XzVZQ1bH5J5vLhLf5Yr5Jd5K5Yb5W3XzVZQ1bH5J', '+1 (310) 555-7364', 'guest'),
+('d3eebc99-9c0b-4ef8-bb6d-6bb9bd380a14', 'Sarah', 'Brown', 'sarah.b@example.com', '$2a$10$Y5vJv.3XzVZQ1bH5J5vLhLf5Yr5Jd5K5Yb5W3XzVZQ1bH5J5vLh', '+1 (305) 555-9215', 'host'),
+('e4eebc99-9c0b-4ef8-bb6d-6bb9bd380a15', 'David', 'Jones', 'david.j@example.com', '$2a$10$vJv.3XzVZQ1bH5J5vLhLf5Yr5Jd5K5Yb5W3XzVZQ1bH5J5vLhLf', '+1 (503) 555-3486', 'guest');
 
 -- Seed Properties Table (5 records)
 INSERT INTO properties (property_id, host_id, name, description, location, pricepernight) VALUES
