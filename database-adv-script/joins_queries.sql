@@ -41,6 +41,6 @@ SELECT
   bookings.end_date
 FROM
   users
-  FULL OUTER JOIN bookings USING (user_id)
+  FULL OUTER JOIN bookings USING (user_id);
 
 
