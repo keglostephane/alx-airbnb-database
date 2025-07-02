@@ -10,8 +10,7 @@ CREATE INDEX property_host_idx ON properties (host_id);
 -- List the number of properties owned per users
 -- Execution time (before optimization): 0.267 ms
 -- Execution time (after optimization): 0.100 ms
-EXPLAIN 
-ANALYZE 
+EXPLAIN ANALYZE 
 SELECT
   users.user_id,
   users.first_name,
@@ -26,8 +25,7 @@ GROUP BY
 -- List the properties owned by a specific user
 -- Execution time (before optimization): 0.102 ms
 -- Execution time (after optimization): 0.038 ms
-EXPLAIN
-ANALYZE
+EXPLAIN ANALYZE
 SELECT
   *
 FROM
@@ -37,8 +35,7 @@ FROM
 -- List all bookings made by a specific user with booking details
 -- Execution time (before optimization): 0.288 ms
 -- Execution time (after optimization): 0.145 ms
-EXPLAIN
-ANALYZE
+EXPLAIN ANALYZE
 SELECT
   bookings.booking_id,
   properties.name,

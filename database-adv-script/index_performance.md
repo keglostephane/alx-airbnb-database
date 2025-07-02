@@ -34,8 +34,7 @@ CREATE INDEX property_host_idx ON properties (host_id);
 ### List the number of properties owned per users
 
 ```sql
-EXPLAIN 
-ANALYZE 
+EXPLAIN ANALYZE 
 SELECT
   users.user_id,
   users.first_name,
@@ -53,8 +52,7 @@ GROUP BY
 ### List the properties owned by a specific user
 
 ```sql
-EXPLAIN
-ANALYZE
+EXPLAIN ANALYZE
 SELECT
   *
 FROM
@@ -68,8 +66,7 @@ FROM
 ### List all bookings made by a specific user with booking details
 
 ```sql
-EXPLAIN
-ANALYZE
+EXPLAIN ANALYZE
 SELECT
   bookings.booking_id,
   properties.name,
