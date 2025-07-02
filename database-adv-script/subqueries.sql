@@ -17,7 +17,7 @@ WHERE
     GROUP BY
       reviews.property_id
     HAVING
-      avg(reviews.rating) > 4.0
+      AVG(reviews.rating) > 4.0
   );
 
 -- Find users who have made more than 3 bookings using a correlated subquery
@@ -28,7 +28,7 @@ FROM
 WHERE
   (
     SELECT
-      count(*)
+      COUNT(*)
     FROM
       bookings
     WHERE
