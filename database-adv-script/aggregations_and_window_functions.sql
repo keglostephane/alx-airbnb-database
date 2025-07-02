@@ -25,11 +25,11 @@ SELECT
   ROW_NUMBER() OVER (
     ORDER BY
       COUNT(property_id)
-  ) booking_row_rank,
+  ) property_row_rank,
   RANK() OVER (
     ORDER BY
       COUNT(property_id)
-  ) booking_rank
+  ) property_rank
 FROM
   properties
   INNER JOIN bookings USING (property_id)
