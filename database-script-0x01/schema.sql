@@ -3,6 +3,7 @@ CREATE DATABASE airbnb;
 
 -- Connect to the database
 \c airbnb;
+\x
 
 -- Create ENUM Types
 CREATE TYPE role_enum AS ENUM ('guest', 'host', 'admin');
@@ -74,9 +75,9 @@ CREATE TABLE messages (
 );
 
 -- Create Indexes
-CREATE INDEX email_index ON users (email);
-CREATE INDEX property_id_index ON bookings (property_id);
-CREATE INDEX booking_property_id ON payments (booking_id);
+CREATE INDEX user_email_idx ON users (email);
+CREATE INDEX booking_property_idx ON bookings (property_id);
+CREATE INDEX payment_booking_idx ON payments (booking_id);
 
 
 
