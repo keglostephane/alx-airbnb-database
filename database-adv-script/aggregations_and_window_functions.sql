@@ -21,10 +21,10 @@ SELECT
   properties.location,
   properties.price_per_night,
   COUNT(property_id) total_bookings,
-  RANK() OVER (
+  ROW_NUMBER() OVER (
     ORDER BY
       COUNT(price_per_night)
-  )
+  ) booking_rank
 FROM
   properties
   INNER JOIN bookings USING(property_id)
