@@ -1,5 +1,6 @@
 -- Connect to database
 \c airbnb
+\x
 
 -- Find the total number of bookings made by each user, using the COUNT function and GROUP BY clause.
 SELECT
@@ -23,12 +24,16 @@ SELECT
   COUNT(property_id) total_bookings,
   ROW_NUMBER() OVER (
     ORDER BY
-      COUNT(price_per_night)
+      COUNT(property_id)
+  ) booking_row_rank,
+  RANK() OVER (
+    ORDER BY
+      COUNT(property_id)
   ) booking_rank
 FROM
   properties
-  INNER JOIN bookings USING(property_id)
+  INNER JOIN bookings USING (property_id)
 GROUP BY
-  (property_id)
+  property_id
 ORDER BY
-  total_bookings DESC
+  total_bookings desc;
