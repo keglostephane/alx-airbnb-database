@@ -1,22 +1,22 @@
 # Implement Indexes for Optimization
 
-## Some high-usage columns in Users, Bookings, Properties tables and Indexes
+## Some high-usage columns in Users, Bookings, Properties tables
 
 ### Users
 
-* **user_id**
-* **email**
+* user_id
+* email
 
 ### Bookings
 
-* **booking_id**
-* **property_id**
-* **user_id**
+* booking_id
+* property_id
+* user_id
 
 ### Properties
 
-* **property_id**
-* **host_id**
+* property_id
+* host_id
 
 ## Optimizations
 
