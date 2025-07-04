@@ -2,7 +2,6 @@
 \c airbnb
 
 -- Retrieve all bookings along with the user details, property details and payment details
-EXPLAIN ANALYZE
 SELECT
   bookings.booking_id,
   bookings.start_date,
