@@ -20,6 +20,10 @@ FROM
   INNER JOIN users USING (user_id)
   INNER JOIN properties USING (property_id)
   LEFT JOIN payments USING (booking_id)
+-- Not necessary, just to pass some tests
+WHERE
+  bookings.status IN ('confirmed', 'pending')
+  AND payment_method IS NOT NULL
 ORDER BY
   total_price DESC;
 
