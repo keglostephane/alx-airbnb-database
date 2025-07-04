@@ -84,14 +84,15 @@ ORDER BY
 ## Query performance analysis
 
 * Sorting rows using quicksort algorithm took 51.04 ms
-* the left join (payments.booking_id = bookings.booking_id) because we want to 
+* The left join (payments.booking_id = bookings.booking_id) because we want to 
 show users that book a property even if they don't make a payment took 17.42 ms.
 
-Overall, this query performs well. We can improve its performance by finding a way to reduce the time it takes to sort the query results by `total_price`.
+Overall, this query performs well. We can improve its performance by finding a way to reduce the time it takes to sort the query results by `total_price` and 
+filter according some criteria.
 
 ## Query performance improvements
 
-### Refactor Query
+### Refactor query
 
 ```sql
 SELECT
@@ -115,7 +116,7 @@ ORDER BY
   total_price DESC
 ```
 
-### Limit query result rows using WHERE, LIMIT 
+### Limit query result rows using `WHERE`, `LIMIT` 
 
 ### Create indexes to limit and order query result quickly
 
