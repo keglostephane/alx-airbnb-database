@@ -83,9 +83,9 @@ ORDER BY
 
 ## Query performance analysis
 
-* Sorting rows using quicksort algorithm took 75.84 ms
-* the right join (payments.booking_id = bookings.booking_id) because we want to 
-show users that book a property evenif they don't make a payment took 17.45 ms.
+* Sorting rows using quicksort algorithm took 51.04 ms
+* the left join (payments.booking_id = bookings.booking_id) because we want to 
+show users that book a property even if they don't make a payment took 17.42 ms.
 
 Overall, this query performs well. We can improve its performance by finding a way to reduce the time it takes to sort the query results by `total_price`.
 
@@ -124,9 +124,5 @@ CREATE INDEX booking_total_price_idx ON bookings (total_price);
 
 CREATE INDEX payment_method ON payments (payment_method);
 ```
-
-**Execution Time (before optimization)**: 0.352 ms
-
-**Execution Time (after optimization)**: 0.258 ms
 
 
