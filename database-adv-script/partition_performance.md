@@ -104,7 +104,7 @@ WHERE
   start_date >= '2023-08-01'
   and start_date <= '2023-10-31';
 ```
-** Execution Time**: 0.073 ms
+**Execution Time**: 0.073 ms
 
 ```sql
 EXPLAIN ANALYZE
@@ -116,7 +116,7 @@ WHERE
   start_date >= '2023-08-01'
   and start_date <= '2023-10-31';
 ```
-** Execution Time **: 0.147 ms
+**Execution Time**: 0.147 ms
 
 ### Fetchings bookings for June 2023
 
