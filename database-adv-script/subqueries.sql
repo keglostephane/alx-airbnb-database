@@ -33,4 +33,4 @@ WHERE
       bookings
     WHERE
       bookings.user_id = users.user_id
-  ) = 2;
+  ) > 3;
